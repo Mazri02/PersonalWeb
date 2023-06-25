@@ -1,0 +1,109 @@
+.BioCont{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.BioPict { 
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    background-color: #311d3f;
+    width:24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SideBioDesc {
+    padding: 30px 10px;
+    background-color: #88304e;
+    border-radius: 15px;
+    text-align: justify;
+    height: auto;
+    box-shadow: 0px 0px 10px 2px black;
+    color: white;
+    width:85%;
+}
+
+.PersonaTitle {
+    text-align: center;
+    font-weight: 400;
+    margin: 2vh 0;
+}
+
+.PersonaName {
+    font-weight: bold;
+}
+
+.DownResume {
+    padding: 1vh 0;
+    width: 80%;
+    margin: 0 3.5vh;
+    border: 0px solid transparent;
+    background-color: blueviolet ;
+    color: white; 
+    border-radius: 5px;
+    font-size: 2.1vh;
+    font-weight: 550;
+}
+
+.PersonaDesc {
+    font-size: 1.8vh;
+    margin: 2vh 0;
+    font-weight: 450;
+    line-height: -0.2;
+}
+
+.PersonalPict {
+    height: 30vh;
+    margin: 1.5vh auto;
+    width: 70%;
+    border-radius: 20vh;
+    background-image: url(../../../public/Picture/ProfilePict.jpeg);
+    background-position: -55px;
+    background-size: 150%;
+}
+
+.PersonaContact {
+    font-size: 2.0vh;
+    font-weight: 350;
+    margin: 2vh auto;
+}
+
+.PictIcon {
+    height: 4vh;
+    margin: 0 2vh;
+    width: 4vh;
+}
+
+._Bottom {
+    display: none
+}
+
+@media only screen and (max-width: 600px) {
+    .BioPict {
+        position: relative;
+        width:100%;
+    }
+    
+    .ProfileContainer {
+        overflow: hidden;    
+    }
+    
+    ._Bottom{
+        display: block;
+        background-color: #311d3f !important;
+        width: 120% !important;
+        bottom: -3.5vh;
+    }
+    
+    .BioCont {
+        height: 90vh;
+        top: 8vh;
+    }
+    
+    .SideBioDesc {
+        height: 100%
+    }
+}

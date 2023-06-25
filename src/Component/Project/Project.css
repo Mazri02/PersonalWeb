@@ -1,0 +1,364 @@
+.HomepageContent {
+    height:100vh;
+    margin: 4vh 0;
+    top:0;
+    position: relative;
+    display: flex;
+}
+
+.ProjectContainer {
+    width:100%;
+    text-align: center;
+    font-size: 1.7vh;
+    display: flex;
+    overflow-x:scroll;
+    overflow-y: hidden;
+}
+
+.ProjectContainer::-webkit-scrollbar,.PosterCont::-webkit-scrollbar {
+    display: none;
+}
+
+.ProjectContainer:hover, .PosterCont:hover {
+    cursor:grab;
+}
+
+.ProjectContainer:active, .PosterCont:active {
+    cursor: grabbing;
+}
+
+.ProjectIcon:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  border-radius: 100px;
+  transition: .2s ease-in;
+}
+
+.ProjectList {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    height:100%;
+}
+
+.ProjectListCont {
+    height: 100%;
+    width: 100%;
+}
+
+.iFrame {
+    height: 100%;
+    width: 100%
+}
+
+.ProjectTitle {
+    text-align: left;
+    color: white;
+    font-size: 2.3vh;
+    padding: 2vh 0;
+    border-bottom: .5px solid rgba(255,255,255,0.6);
+    font-weight: bold;
+}
+
+.ProjectItem {
+    display: flex;
+    justify-content: center;
+}
+
+.ProjectContent{
+    width:100%;
+    padding: 10px 15px;
+}
+
+.CenterMinor{
+    justify-content: center;
+}
+
+.ProjectDesc {
+    color: white
+}
+
+.ProjectIcon {
+    width: 15vh;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 2vh auto;
+    background-color: grey;
+    height:15vh;
+    transition: .3s ease-out;
+}
+
+.BookIcon {
+    background-image: url(../../Images/Interfaces/book-alt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.GoogleIcon {
+    background-image: url(../../Images/Interfaces/google.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.DjiksIcon {
+    background-image: url(../../Images/Interfaces/code-branch.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.CakeIcon {
+    background-image: url(../../Images/Interfaces/cake-birthday.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.MoonIcon {
+    background-image: url(../../Images/Interfaces/moon-stars.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.MicIcon {
+    background-image: url(../../Images/Interfaces/microphone-alt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.ExamIcon {
+    background-image: url(../../Images/Interfaces/test.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.QuranIcon {
+    background-image: url(../../Images/Interfaces/book-quran.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.ClubIcon {
+    background-image: url(../../Images/Interfaces/graduation-cap.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.RamadanIcon {
+    background-image: url(../../Images/Interfaces/stars.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.EventIcon {
+    background-image: url(../../Images/Interfaces/notebook.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.MedsIcon {
+    background-image: url(../../Images/Interfaces/pills.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.CodeNote {
+    height: 80%;
+    width: 100%;
+    border-top: 0px solid white;
+    border-bottom: 0px solid white;
+    overflow: none;
+}
+
+.sliderFont {
+    display: flex;
+    align-items: center;
+    margin: 0 2px;
+}
+
+.ProjectPreview {
+    width:50%;
+    height:90%;
+    filter: drop-shadow(2px 4px 6px black);
+    padding: 2vh 4vh;
+    display: block;
+    margin: auto;
+}
+
+.CodeContent {
+    display: block;
+    width: 100%;    
+    height: 100%;
+}
+
+.CodeMirror { 
+    font-size: 11px;
+    display: none;
+}
+
+.ActionButton {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.FooterButton button:hover {
+    background-color: #c1c1c1;
+}
+
+.ActionButton .Copy{
+    border-radius: 10px 0 0 10px;
+}
+
+.ActionButton .Execute {
+    border-radius: 0 10px 10px 0;
+}
+
+button.Visit {
+    padding: 1vh;
+    width:40%;
+    font-weight: bold;
+    color: white;
+    background-color: #a4a4a4;
+    border: 0px solid white;
+    border-radius: 5px;
+    display: none;
+}
+
+.ActionButton button {
+    padding: 1vh;
+    width:50%;
+    font-weight: bold;
+    color: white;
+    background-color: #a4a4a4;
+    border: 0px solid white;
+}
+
+.HeaderButton button {
+    background-color: transparent;
+    width: 30%;
+}
+
+.HeaderButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.FontSize,.ZoomLevel {
+    margin: 0 5px;
+    color: #f4f4f4;
+}
+
+.CodeTitle {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0px solid white;
+    border-radius: 10px 10px 0 0;
+    background-color: #272822;
+    padding: 2vh 1vh;
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+
+.CodeFooter {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    background-color: #272822;
+    padding: 2vh 1vh;
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+
+.ChangeFontSize, .FontSize, .FooterButton {
+    display: none
+}
+
+.PosterPreview {
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    transition: .3s ease-in;
+    position: absolute;
+}
+
+.PosterCont {
+    position: relative;
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+.PDFQuestion {
+    height: 100%;
+    display: none;
+    width: 100%;
+}
+
+.Multimedia:hover, .SourceCode:hover {
+    cursor:default;
+}
+
+.Question:hover {
+    cursor: pointer;
+}
+
+.PosterBackG {
+    filter: opacity(0.75);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in;
+    background-color: black;
+}
+
+.DescPoster {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .ProjectPreview {
+        display: none;
+    }
+    
+    .ProjectList{
+        width: 100%
+    }
+    
+    .ProjectIcon {
+        width: 10vh;
+        height: 10vh;
+    }
+    
+    .ProjectDesc {
+        font-size: 1.6vh
+    }
+    
+    .ProjectTitle{
+        font-size: 2vh;
+        margin: 0 1vh
+    }
+    
+    .ProjectListCont {
+        height: 35vh
+    }
+}

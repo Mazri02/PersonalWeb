@@ -1,0 +1,222 @@
+.SkillsContent {
+    height: 102vh;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.BlurredBorder {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    transform: translate(-1.5vh,-1.5vh);
+    background-color: #212129;
+    height: 3vh;
+    filter: blur(3.5px);
+}
+
+.SkillBlurred {
+    background-color: black;
+    width:100%;
+}
+
+.SkillDesc {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    display: none;
+    filter: opacity(0);
+    transition: .3s ease-in;
+    height: 90%;
+    align-items: flex-end;
+}
+
+.SkillHolder {
+    height: 100%;
+    width: 25%;
+    color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in;
+}
+
+.SkillHolder:has(> .P1_Content) {
+    background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHRtbHxlbnwwfHwwfHw%3D&w=1000&q=80);
+    background-size: cover;
+    background-position: center;
+}
+
+.SkillHolder:has(> .P2_Content) {
+    background-image: url(https://cdn.wallpapersafari.com/63/97/0NF2HM.jpg);
+    background-size: cover;
+    background-position: -220px;
+}
+
+.SkillHolder:has(> .P3_Content) {
+    background-image: url(https://w.forfun.com/fetch/12/122d0afd5b7750b30ca54ca7e67a51ed.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.SkillHolder:has(> .P4_Content) {
+    background-image: url(https://blog-c7ff.kxcdn.com/blog/wp-content/uploads/2019/11/Banner-Blog-1A-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.SkillHolder:has(> .P5_Content) {
+    background-image: url(https://wallpapers.com/images/hd/office-365-puzzle-art-b0uxy99x18j5h4oz.jpg);
+    background-size: cover;
+    background-position: -560px;
+}
+
+.SkillHolder:has(> .P6_Content) {
+    background-image: url(https://www.e-spincorp.com/wp-content/uploads/2020/03/Adobe_Creative.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.SkillDesc_Content {
+    text-align: left;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 2.2vh;
+    border-top:2px solid white;
+}
+
+.SkillTitle {
+    font-size: 3vh;
+    font-weight: bold;
+    white-space: nowrap
+}
+
+.ExpertiseText {
+    font-weight: bold;
+    color: white;
+    z-index: 2;
+    white-space: nowrap;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    position: absolute;
+    font-size: 4.5vh;
+    transition: .5s ease-in;
+}
+
+.Expertise {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    filter: opacity(0.35);
+    transition: .5s ease-out;
+}
+
+.ExpertiseStats {
+    margin:10px 0;
+}
+
+.StatsContent {
+    display: flex;
+    width: 100%;
+    justify-content: space-between
+}
+
+.StatsTitle {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center
+}
+
+.progressBar {
+    width: 55%;
+    font-weight: bold;
+    word-spacing: 30px;
+    font-size: 13px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family:cursive;
+}
+
+.progress-bar {
+    background-color: #fff !important;
+    transition: .3s ease-in;
+}
+
+.SkillHolder:hover .Basic .progress-bar {
+    background-color: #427bff !important;
+    transition: .3s ease-out;
+}
+
+.SkillHolder:hover .Average .progress-bar {
+    background-color: rgba(230,110,10,1) !important;
+    transition: .3s ease-out;
+}
+
+.SkillHolder:hover .Excellent .progress-bar {
+    background-color: #4fa746 !important;
+    transition: .3s ease-out;
+}
+
+.SkillHolder:hover .Advanced .progress-bar {
+    background-color: #f2c010 !important;
+    transition: .3s ease-out;
+}
+
+.ExpertiseText:hover > .Expertise,
+.SkillHolder:hover > .Expertise
+{
+    filter: opacity(0.65);
+    transition: .5s ease-in;
+}
+
+.ExpertiseText:hover ,
+.SkillHolder:hover > .ExpertiseText {
+    filter: opacity(0);
+    transition: .5s ease-out;
+}
+
+.SkillHolder:hover > .SkillDesc{
+    transition: .3s ease-out;
+    filter: opacity(1);
+    display: flex;
+}
+
+.SkillHolder:hover {
+    transform: scaleX(1.025);
+    width:60%;
+    transition: .5s ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+    .SkillsContent {
+        flex-direction: column;
+    }
+    
+    .SkillHolder {
+        width: 100% !important;
+        height: 20%;
+    }
+    
+    .SkillHolder:hover {
+        transform: scaleX(1.025);
+        height: 100%;
+        transition: .5s ease-out;
+    }
+    
+    .SkillHolder:has(> .P5_Content),.SkillHolder:has(> .P2_Content) {
+        background-position: center;
+    }
+    
+    .BlurredBorder {
+        filter: blur(2px);
+        width: 100%
+    }
+    
+    .ExpertiseText {
+        transform: rotate(0);
+        font-size: 3.5vh;
+    }
+}

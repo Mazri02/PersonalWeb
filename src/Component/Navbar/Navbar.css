@@ -1,0 +1,115 @@
+.content {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.aboutMe {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    height: 8vh;
+    width: 76%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition: .5s ease-out;
+}
+
+.backgroundNavbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    height: 8vh;    
+    display: flex;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.scroll {
+    width: 76%;
+    background: linear-gradient(230deg, rgba(226,62,80,1) 11%, rgba(59,18,97,1) 100%);
+    transition: .5s ease;
+}
+
+.links li a .NavIcon{
+    filter: drop-shadow(0px 0px 1px white);
+}
+
+.streched {
+    width: 100%;
+    background: linear-gradient(230deg, rgba(226,62,80,1) 11%, rgba(59,18,97,1) 100%);
+    transition: .5s ease;
+}
+
+.NavIcon {
+    height: 3vh;
+    width: 3vh;
+    margin: 0 1vh;
+}
+
+
+.webTitle {
+    color: white;
+    margin: 0px 15px;
+    font-weight:500;
+    font-size: 2.3vh;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2vh;
+    margin: auto 2vh;
+}
+
+.links li {
+    margin: 0 2vh;
+    font-weight: bold;
+}
+
+.links li a {
+    text-decoration: none;
+    display: flex;
+    color: white;
+}
+
+.links li:hover {
+    transform: scale(1.05);
+    transition: transform 0.1s ease-in-out;
+    color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll,.aboutMe,.streched {
+        width: 100% !important;
+    }
+    
+    .webTitle,.NavTitle{
+        display: none;
+    }
+    
+    .BioPict {
+        top: 8vh;
+        padding: 3vh 0;
+    }
+    
+    .links li {
+        margin: 0;
+    }
+    
+    .links {
+        margin :auto;
+        width: 80%;
+        padding: 0 !important;
+    }
+    
+    .backgroundNavbar,.aboutMe {
+        left:0;
+        right: unset;
+    }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "personal_biodata",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@codemirror/lang-java": "^6.0.1",
+    "@monaco-editor/react": "^4.5.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@uiw/codemirror-theme-okaidia": "^4.19.16",
+    "@uiw/react-codemirror": "^4.19.16",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "jquery": "^3.6.4",
+    "monaco-themes": "^0.4.4",
+    "nodemailer": "^6.9.3",
+    "querystring-es3": "^0.2.1",
+    "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-monaco-editor": "^0.52.0",
+    "react-scripts": "5.0.1",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.1.0"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
