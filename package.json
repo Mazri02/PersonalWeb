@@ -1,5 +1,6 @@
 {
   "name": "personal_biodata",
+  "homepage": "https://mazri02.github.io/PersonalWeb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
