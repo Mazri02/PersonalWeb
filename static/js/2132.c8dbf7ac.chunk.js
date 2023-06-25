@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[2132],{2132:function(a,e,o){a.exports=o.p+"static/media/MFDoomProfile.017eaa55b2082218a5c2.png"}}]);

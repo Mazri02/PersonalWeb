@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[7399],{7399:function(a,e,s){a.exports=s.p+"static/media/MFDoom.bbc8250a8a2c88570130.png"}}]);

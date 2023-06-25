@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[6387],{6387:function(e,a,s){e.exports=s.p+"static/media/KanyeProfile.64377088abf18d720ee4.png"}}]);

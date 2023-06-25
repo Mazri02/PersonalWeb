@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[1240],{1240:function(e,a,s){e.exports=s.p+"static/media/KendrickProfile.42454710328ae8e42a38.png"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[5646],{5646:function(a,e,n){a.exports=n.p+"static/media/XXXTentacion.9df2198fb4c85853ad94.png"}}]);

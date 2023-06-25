@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[6768],{6768:function(e,a,s){e.exports=s.p+"static/media/Weekend.ec7e14f6fa12124592cf.png"}}]);

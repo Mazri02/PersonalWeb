@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[495],{495:function(c,a,e){c.exports=e.p+"static/media/cimbQR.1f39c891cc77d83f96cc.png"}}]);

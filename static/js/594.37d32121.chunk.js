@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[594],{594:function(a,e,f){a.exports=f.p+"static/media/fpxPayment.fd0fa1abff9cf9bdef53.png"}}]);

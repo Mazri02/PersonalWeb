@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[5897],{5897:function(a,e,c){a.exports=c.p+"static/media/cimbBank.8a2e883c4912fce0fc61.png"}}]);
