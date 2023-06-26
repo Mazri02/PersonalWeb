@@ -245,15 +245,7 @@ class Albums extends React.Component{
     }
     
     searchforAlbums(name){
-        var urlHost = window.location.host;
-        
-        if(urlHost.split(':')[0] == 'localhost'){
-            urlHost = 'http://' +urlHost.split(':')[0] + ':3001'
-        } else {
-            urlHost = 'https://' + urlHost + ":3001"
-        }
-        
-        axios.get(urlHost +'/SongAlbum/searchServer.js', { params: { directoryPath  : name } }).then(response => {  
+        axios.get('/SongAlbum', { params: { directoryPath  : name } }).then(response => {  
             this.setState({currentAlbum:response.data});
             this.setState({currentArtist:name})
             const imagePromises = response.data.map(album => {
