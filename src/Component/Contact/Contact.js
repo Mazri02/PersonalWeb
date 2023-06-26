@@ -14,6 +14,7 @@ class Contact extends React.Component{
         var inputValue = $('.InspireInput').find('.InputVal');
         var numOfErr = 0;
         var isLoading = false;
+        var urlHost = window.location.host;
         
         for(var j = 0;j < inputValue.length;j++){
             if(inputValue[j].value == '' || inputValue[j].value == undefined){
@@ -30,7 +31,7 @@ class Contact extends React.Component{
             var RecepientName = inputValue[3].value
             
             isLoading = true;
-            axios.get('http://localhost/sendEmail/searchServer.js',{
+            axios.get('http://'+urlHost+'/sendEmail/searchServer.js',{
                 params : {
                     gmail : RecepientGmail,
                     phone : RecepientPhone,
