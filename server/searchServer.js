@@ -6,13 +6,13 @@ const mailer = require('nodemailer');
 const app = express();
 app.use(cors());
 
-app.get('/SongAlbum/searchServer.js',(req,res) => {
+app.get('/SongAlbum',(req,res) => {
     findAlbum(req.query.directoryPath).then(response => {
         res.json(response)
     });
 })
 
-app.get('/sendEmail/searchServer.js',(req,res) => {
+app.get('/sendEmail',(req,res) => {
     var transporter = mailer.createTransport({
       service: 'gmail',
       auth: {
