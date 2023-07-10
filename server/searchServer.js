@@ -1,41 +1,46 @@
+const findAlbum = require('./FindAlbum');
 const cors = require('cors');
 const express = require('express');
-const findAlbum = require('./FindAlbum');
 const mailer = require('nodemailer');
 
-module.exports = async (req, res) => {
-  const { query, path } = req;
+const app = express();
+app.use(cors());
 
-  if (path.startsWith('/SongAlbum')) {
-    try {
-      const response = await findAlbum(query.directoryPath);
-      res.status(200).json(response);
-    } catch (error) {
-      res.status(500).json({ error: error.message });
-    }
-  } else if (path.startsWith('/sendEmail')) {
-    try {
-      const transporter = mailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: 'azri.mokhzani@gmail.com',
-          pass: 'cnkzstjbhorpdcef'
-        }
-      });
+app.get('/SongAlbum/searchServer.js',(req,res) => {
+    findAlbum(req.query.directoryPath).then(response => {
+        res.json(response)
+    });
+})
 
-      const mailOptions = {
-        from: query.gmail,
-        to: 'azri.mokhzani@gmail.com',
-        subject: `${query.name} wants to send a message from the website`,
-        html: `${query.text}<br/>${query.phone}`
-      };
+app.get('/sendEmail/searchServer.js',(req,res) => {
+    var transporter = mailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: 'azri.mokhzani@gmail.com',
+        pass: 'cnkzstjbhorpdcef'
+      }
+    });
+    
+    var mailOptions = {
+      from: req.query.gmail,
+      to: 'azri.mokhzani@gmail.com',
+      subject: req.query.name + ' wants to send a message from Website',
+      html: req.query.text + '<br/>' + req.query.phone
+    };
+    
+    return new Promise((resolve,reject) => {
+        transporter.sendMail(mailOptions, function(error, info){
+          if (error) {
+            reject(error);
+            res.json({detail: error,code:500})
+          } else {
+            resolve(info.response)
+            res.json({details :info.response, code:200});
+          }
+        });
+    }) 
+})
 
-      const info = await transporter.sendMail(mailOptions);
-      res.status(200).json({ details: info.response, code: 200 });
-    } catch (error) {
-      res.status(500).json({ detail: error, code: 500 });
-    }
-  } else {
-    res.status(404).end();
-  }
-};
+app.listen(3001, () => {
+    console.log('Blud is listening on port 3001')
+})
