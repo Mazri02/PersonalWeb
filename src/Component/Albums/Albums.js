@@ -245,7 +245,7 @@ class Albums extends React.Component{
     }
     
     searchforAlbums(name){
-        axios.get('/SongAlbum', { params: { directoryPath  : name } }).then(response => {  
+        axios.get('http://localhost:3001/SongAlbum', { params: { directoryPath  : name } }).then(response => {  
             this.setState({currentAlbum:response.data});
             this.setState({currentArtist:name})
             console.log(response.data)
