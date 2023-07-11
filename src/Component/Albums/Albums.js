@@ -245,10 +245,10 @@ class Albums extends React.Component{
     }
     
     searchforAlbums(name){
-        axios.get('http://localhost:3001/SongAlbum', { params: { directoryPath  : name } }).then(response => {  
+        axios.get('http://192.168.0.126/SongAlbum', { params: { directoryPath  : name } }).then(response => {  
             this.setState({currentAlbum:response.data});
             this.setState({currentArtist:name})
-            console.log(response.data)
+
             const imagePromises = response.data.map(album => {
               const imagePath = `./Album Covers/${album}.png`;
               return new Promise((resolve, reject) => {
