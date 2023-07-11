@@ -30,7 +30,7 @@ class Contact extends React.Component{
             var RecepientName = inputValue[3].value
             
             isLoading = true;
-            axios.get('http://192.168.0.126/sendEmail',{
+            axios.get('http://192.168.0.126:3001/sendEmail',{
                 params : {
                     gmail : RecepientGmail,
                     phone : RecepientPhone,
