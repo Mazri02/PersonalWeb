@@ -1,9 +1,16 @@
 const cors = require('cors');
 const express = require('express');
 const mailer = require('nodemailer');
+const findAlbum = require('./FindAlbum');
 
 const app = express();
 app.use(cors());
+
+app.get('/SongAlbum',(req,res) => {
+    findAlbum(req.query.directoryPath).then(response => {
+        res.json(response)
+    });
+})
 
 app.get('/sendEmail',(req,res) => {
     var transporter = mailer.createTransport({
