@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[7421],{7421:function(a,e,s){a.exports=s.p+"static/media/TouchNGoQR.b38328ca7acf859ee39d.jpeg"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[7609],{7609:function(e,a,s){e.exports=s.p+"static/media/DrakeProfile.e03332f12de7f0f2a98c.png"}}]);

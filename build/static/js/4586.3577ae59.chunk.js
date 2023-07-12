@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[4586],{4586:function(a,e,s){a.exports=s.p+"static/media/coffeeTable.5ca16f397e0db6db7f2a.jpg"}}]);

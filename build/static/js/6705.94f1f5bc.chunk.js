@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[6705],{6705:function(e,a,s){e.exports=s.p+"static/media/BabyKeem.99c70e17e29babee213e.png"}}]);

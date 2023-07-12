@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[579],{579:function(a,e,p){a.exports=p.p+"static/media/paypalQR.03b798be35401169e37f.png"}}]);

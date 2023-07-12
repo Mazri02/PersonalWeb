@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[601],{601:function(a,e,s){a.exports=s.p+"static/media/ideaIcon.d2af69a59b6b20ec184e.png"}}]);

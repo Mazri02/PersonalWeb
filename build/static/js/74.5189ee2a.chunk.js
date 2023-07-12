@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[74],{74:function(a,e,s){a.exports=s.p+"static/media/Tyler.9883657aaefb9425dac6.png"}}]);

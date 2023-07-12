@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[5929],{5929:function(e,a,c){e.exports=c.p+"static/media/WeekendCollage.b30e5cca2cb79593caf8.png"}}]);

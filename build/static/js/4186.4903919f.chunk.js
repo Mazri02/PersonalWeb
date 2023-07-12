@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpersonal_biodata=self.webpackChunkpersonal_biodata||[]).push([[4186],{4186:function(e,a,s){e.exports=s.p+"static/media/coffeeIcon.e4d11e319f49aa61491f.png"}}]);
