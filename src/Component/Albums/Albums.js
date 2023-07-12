@@ -352,8 +352,8 @@ class Albums extends React.Component{
                 </div>
                         
                 <div className='MiddleMusic'>
-                    <iframe className='MVPreview BlurredPreview' frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer-when-downgrade" allowFullScreen></iframe>
-                    <iframe className='MVPreview' title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer-when-downgrade" allowFullScreen></iframe>
+                    <iframe className='MVPreview BlurredPreview' frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="no-referrer-when-downgrade" allowFullScreen></iframe>
+                    <iframe className='MVPreview' title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="no-referrer-when-downgrade" allowFullScreen></iframe>
                     <div className='MVTitle'>
                         <div className='SongName'>How to View Music Video?</div>
                         <div className='SongAlbum'>Choose a Song in the Album or </div>
