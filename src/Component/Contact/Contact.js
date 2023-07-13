@@ -30,7 +30,7 @@ class Contact extends React.Component{
             var RecepientName = inputValue[3].value
             
             isLoading = true;
-            axios.get('http://192.168.0.126:3001/sendEmail/' + RecepientName + "/" + RecepientGmail+ "/" 
+            axios.get(' sendEmail/' + RecepientName + "/" + RecepientGmail+ "/" 
                       + RecepientPhone + "/" + RecepientText + "/").then((response) => {
                 if(response.data.code == 200){
                     alert('Email has been sent')
