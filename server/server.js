@@ -6,13 +6,13 @@ const findAlbum = require('./FindAlbum');
 const app = express();
 app.use(cors());
 
-app.get('/SongAlbum',(req,res) => {
-    findAlbum(req.query.directoryPath).then(response => {
+app.get('/SongAlbum/:directoryPath',(req,res) => {
+    findAlbum(req.params.directoryPath).then(response => {
         res.json(response)
     });
 })
 
-app.get('/sendEmail',(req,res) => {
+app.get('/sendEmail/:name/:gmail/:phone/:text',(req,res) => {
     var transporter = mailer.createTransport({
       service: 'gmail',
       auth: {
@@ -22,10 +22,10 @@ app.get('/sendEmail',(req,res) => {
     });
     
     var mailOptions = {
-      from: req.query.gmail,
+      from: req.params.gmail,
       to: 'azri.mokhzani@gmail.com',
-      subject: req.query.name + ' wants to send a message from Website',
-      html: req.query.text + '<br/>' + req.query.phone
+      subject: req.params.name + ' wants to send a message from Website',
+      html: req.params.text + '<br/>' + req.params.phone
     };
     
     return new Promise((resolve,reject) => {
