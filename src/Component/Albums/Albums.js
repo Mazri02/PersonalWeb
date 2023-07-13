@@ -245,7 +245,7 @@ class Albums extends React.Component{
     }
     
     searchforAlbums(name){
-        axios.get('SongAlbum/'+name).then(response => {  
+        axios.get('http://192.168.0.126:3001/SongAlbum/'+name).then(response => {  
             this.setState({currentAlbum:response.data});
             this.setState({currentArtist:name})
 
