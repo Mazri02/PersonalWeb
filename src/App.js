@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Component/Navbar/Navbar.js';
 import Homepage from './Component/Project/Project.js';
 import SideBio from './Component/SideBio/SideBio.js';
+import Albums from './Component/Albums/Albums.js';
 import Skills from './Component/Skills/Skills.js';
 import Journey from './Component/Journey/Journey.js';
 import Contact from './Component/Contact/Contact.js';
@@ -27,6 +28,10 @@ class App extends React.Component{
                 <div className='ContactContainer'>    
                     <Contact/>
                 </div>
+                
+                <div className='AlbumContainer'>
+                    <Albums/>
+                </div>   
             </React.Fragment>
         };
     }
