@@ -3,7 +3,7 @@ const path = require('path');
 
 function findAlbum(p) {
   return new Promise((resolve, reject) => {
-    const directoryPath = path.join(process.cwd(), 'SongAlbum/' + p);
+    const directoryPath = path.join('SongAlbum' + p);
     fs.readdir(directoryPath, function (err, files) {
       if (err) {
         reject(err);
