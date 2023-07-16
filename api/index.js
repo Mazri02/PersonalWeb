@@ -9,6 +9,7 @@ app.use(cors());
 app.get('/SongAlbum/:directoryPath',(req,res) => {
     findAlbum(req.params.directoryPath).then(response => {
         res.json(response)
+        res.json(req.params.directoryPath)
     });
 })
 
